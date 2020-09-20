@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box {
+            background-color: lightgrey;
+            height: 100vh;
+            margin: auto;
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .box h1 {
+            font-size: 7vh;
+            text-align: center;
+            width: 100%;
+            margin-top: 10vh;
+            color: red;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            width: 330px;
+            position: relative;
+            height:400px;
+            display: inline-block;
+            margin: auto;
+            margin-top: 0vh;
+            background-color: #fff;
+        }
+        #form-1 header {
+            height: 30%;
+            background: linear-gradient(to right,orange,red);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        #form-2,#form-3{
+            margin-top: 20px;
+        }
+        span{
+            margin: 10px 10%;
+            font-size: 20px;
+        }
+
+        .form header h1 {
+            text-align: center;
+        }
+        .form section{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+        input[type='email']{
+            outline: none;
+            border: none;
+            border-bottom: 3px solid grey;
+            padding: 10px 0px;
+            width: 80%;
+            margin-top: 10px;
+            margin-left: 10%;
+        }
+        #form-3 input[type='email']:hover, #form-3 input[type='password']:hover{
+            border-bottom: 3px solid blue;
+            color: blue;
+        }
+        #form-2 input[type='email']:hover, #form-2 input[type='password']:hover{
+            border-bottom: 3px solid  rgb(221, 47, 76);
+            color:  rgb(221, 47, 76);
+        }
+        #form-1 input[type='email']:hover, #form-1 input[type='password']:hover{
+            border-bottom: 3px solid orange;
+            color: orange;
+        }
+        input[type='password']{
+            outline: none;
+            border: none;
+            border-bottom: 3px solid grey;
+            padding: 10px 0px;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 10px;
+        }
+        section .fp{
+            font-size: 15px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type='submit']{
+            outline: none;
+            border: none;
+            padding: 10px 25px;
+            border-radius:20px;
+            color: white;
+            background-color: grey;
+            margin-top: 40px;
+
+        }
+        #form-1 section .dha{
+            display: inline-block;
+            text-align: right;
+            position: absolute;
+            bottom: 0px; 
+            margin-left:12px;
+            margin-top: 25px;
+            padding: 30px 0px;
+        }
+        @media screen and (max-width: 1010px) {
+            .box {
+                height: auto;
+            } 
+            .box h1{
+                font-size: 4vh;
+            } 
+
+        }
+        #form-2 header{
+            height: 10%;
+            text-align: center;
+            color: rgb(221, 47, 76);;
+        }
+        #form-2 footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 25%;
+            position: absolute;
+            bottom: 0px;
+            background-color: cadetblue;
+        }
+        #form-2 .dh{
+            top: 20%;
+        }
+        #form-3 span{
+            border: 2px solid grey;
+            border-radius: 20px;
+            background-color: white;
+            color:rgb(60, 60, 245) ;
+            padding: 5px 20px;
+            margin: 10px 5px;
+            /* margin: auto; */
+            /* position: absolute; */
+            bottom: 20px;
+            /* overflow: auto; */
+            margin-left: 30px;
+        }
+        #form-3 .signin{
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            border-radius: 20px;
+            background: linear-gradient(to right,lightblue,blue);
+            margin-top: 20px;
+        }
+        #form-3 header{
+            height: 10%;
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>FORM TEMPLATES</h1>
+        <div class="form" id="form-1">
+            <header>
+                <h2>Login</h2>
+                <div>
+                    <span><i class="fa fa-facebook-official"></i></span>
+                    <span><i class="fa fa-twitter"></i></span>
+                    <span><i class="fa fa-google"></i></span>
+                </div>
+            </header>
+            <section>
+                <form action="">
+                    <div class="email"><input type="email" name="" id="" placeholder="Enter Your Email ID"></div>
+                   <div> <input type="password" name="password" id="" placeholder="Your Password"></div>
+                   <p class="fp">Forgot <b>Password?</b></p> <br>
+                   <input type="submit" value="Sign Up" placeholder="Sign Up">
+                   <p class="dha">Don't Have account? <b>Sign Up</b></p>
+                </form>
+            </section>
+        </div>
+        <div class="form" id="form-2">
+            <header>
+                <h2>Sign Up</h2>
+               
+            </header>
+            <section>
+                <form action="">
+                    <div class="email"><input type="email" name="" id="" placeholder="Enter Your Email ID"></div>
+                   <div> <input type="password" name="password" id="" placeholder="Your Password"></div>
+                   <p style="margin-left: 15px;"><input type="checkbox" name="" id="">Accept the terms and conditions</span></p>
+                   <input type="submit" value="Sign Up" placeholder="Sign Up" style="background-color: rgb(221, 47, 76);">
+                   <p class="dh">Have an account <b>Log in</b></p>
+                </form>
+            </section>
+            <footer>
+                <div>
+                    <span><i class="fa fa-facebook-official"></i></span>
+                    <span><i class="fa fa-twitter"></i></span>
+                    <span><i class="fa fa-google"></i></span>
+                </div>
+            </footer>
+        </div>
+        <div class="form" id="form-3">
+            <header>
+                <h2 >Sign Up</h2>
+               
+            </header>
+            <section>
+                <form action="">
+                    <div class="email"><input type="email" name="" id="" placeholder="Enter Your Email ID"></div>
+                   <div> <input type="password" name="password" id="" placeholder="Your Password"></div>
+                   <p class="fp">Forgot <b>Password?</b></p> <br>
+                   <input type="submit" value="Sign Up" placeholder="Sign Up" class="signin">
+                </form>
+            </section>
+            <footer>
+                <div style="text-align: center; margin-top: 10px;">Or sign in with</div>
+                <div style="margin-top: 20px;">
+                    <span><i class="fa fa-facebook-official"></i></span>
+                    <span><i class="fa fa-twitter"></i></span>
+                    <span><i class="fa fa-google"></i></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
